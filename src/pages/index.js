@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <Layout>
         <Card className="text-center">
-          <Card.Header>Featured</Card.Header>
+          <Card.Header>Joke Station</Card.Header>
           <Card.Body>
             <Card.Title>Special title treatment</Card.Title>
             <Card.Text>
