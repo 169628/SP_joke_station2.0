@@ -10,7 +10,7 @@ export default function LayoutOffCanvas({ name, children, ...props }) {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow} className="me-2">
+      <Button variant="outline-secondary" onClick={handleShow} className="me-2">
         {name}
       </Button>
       <Offcanvas show={show} onHide={handleClose} {...props}>

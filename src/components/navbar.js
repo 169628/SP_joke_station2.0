@@ -6,7 +6,7 @@ import LayoutOffCanvas from "./offcanvas";
 
 export default function LayoutNavbar() {
   return (
-    <Navbar className="bg-body-tertiary">
+    <Navbar bg="primary" data-bs-theme="dark" className="mb-5">
       <Container>
         <Navbar.Brand href="#home">
           <StaticImage
