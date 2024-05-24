@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link } from "gatsby";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import {
   Container,
@@ -19,36 +20,56 @@ export default function Home() {
           <Col>
             <Card className="text-center">
               <Container>
-                <Row>
-                  <Col>
+                <Row className="d-flex align-items-center">
+                  <Col sm={12} md={6}>
                     <StaticImage src="../images/login.jpg" alt="login" />
                   </Col>
-                  <Col>
+                  <Col sm={12} md={6}>
                     <Card.Body>
                       <Card.Title>登入</Card.Title>
-                      <div className="form-floating">
+                      <div className="form-floating mt-3">
                         <input
                           type="mail"
-                          className="form-control"
+                          className="form-control rounded-pill"
                           id="floatingMail"
-                          placeholder="Password"
+                          placeholder="Mail"
                         />
-                        <label for="floatingMail">
-                          <i class="bi bi-envelope"></i> Email
+                        <label htmlFor="floatingMail">
+                          <i className="bi bi-envelope"></i> Email
                         </label>
                       </div>
-                      <div className="form-floating">
+                      <div className="form-floating mt-3">
                         <input
                           type="password"
-                          className="form-control"
+                          className="form-control rounded-pill"
                           id="floatingPassword"
                           placeholder="Password"
                         />
-                        <label for="floatingPassword">
-                          <i class="bi bi-shield-lock"></i> Password
+                        <label htmlFor="floatingPassword">
+                          <i className="bi bi-shield-lock"></i> Password
                         </label>
                       </div>
-                      <Button variant="primary">以信箱登入</Button>
+                      <div className="text-end pe-4">
+                        <Link to="/password">忘記密碼</Link>
+                      </div>
+                      <div className="d-grid gap-2 mt-3">
+                        <Button
+                          variant="primary"
+                          size="lg"
+                          className="rounded-pill"
+                        >
+                          以信箱登入
+                        </Button>
+                      </div>
+                      <div className="d-grid gap-2 mt-3">
+                        <Button
+                          variant="secondary"
+                          size="lg"
+                          className="rounded-pill"
+                        >
+                          <i className="bi bi-google"></i> 以 Google 帳號登入
+                        </Button>
+                      </div>
                     </Card.Body>
                   </Col>
                 </Row>
