@@ -2,7 +2,7 @@ import * as React from "react";
 import { Link } from "gatsby";
 
 import Layout from "../components/layout";
-import { Button, Card, Row, Col } from "react-bootstrap";
+import { Button, Card, Table } from "react-bootstrap";
 
 export default function Author() {
   return (

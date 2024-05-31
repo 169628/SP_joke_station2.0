@@ -1,15 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import {
-  Container,
-  Row,
-  Col,
-  Button,
-  Card,
-  Form,
-  InputGroup,
-} from "react-bootstrap";
+import { Container, Row, Col, Button, Card } from "react-bootstrap";
 import { StaticImage } from "gatsby-plugin-image";
 
 export default function Home() {
@@ -21,8 +13,8 @@ export default function Home() {
             <Card className="text-center">
               <Container>
                 <Row className="d-flex align-items-center">
-                  <Col sm={12} md={6}>
-                    <StaticImage src="../images/login.jpg" alt="login" />
+                  <Col sm={12} md={6} className="mt-5 mb-5">
+                    <StaticImage src="../images/welcomeBack.jpg" alt="login" />
                   </Col>
                   <Col sm={12} md={6}>
                     <Card.Body>
