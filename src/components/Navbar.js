@@ -1,5 +1,8 @@
 import { Container, Nav, Navbar, Offcanvas } from "react-bootstrap";
 
+import RegisterModal from "./modals/RegisterModal";
+import LoginModal from "./modals/LoginModal";
+
 function Header() {
   return (
     <>
@@ -21,8 +24,17 @@ function Header() {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link href="#action1">登入</Nav.Link>
-                <Nav.Link href="#action2">註冊</Nav.Link>
+                <Nav.Link data-bs-target="#loginToggle" data-bs-toggle="modal">
+                  登入
+                </Nav.Link>
+                <LoginModal />
+                <Nav.Link
+                  data-bs-target="#registerToggle"
+                  data-bs-toggle="modal"
+                >
+                  註冊
+                </Nav.Link>
+                <RegisterModal />
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>

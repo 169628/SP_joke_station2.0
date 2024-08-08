@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import Author from "./pages/Author";
 import Follow from "./pages/Follow";
 import Save from "./pages/Save";
+import Create from "./pages/Create";
+import Edit from "./pages/Edit";
 
 import Navbar from "./components/Navbar";
 
@@ -18,6 +20,8 @@ function App() {
             <Route path="/author" element={<Author />}></Route>
             <Route path="/follow" element={<Follow />}></Route>
             <Route path="/save" element={<Save />}></Route>
+            <Route path="/create" element={<Create />}></Route>
+            <Route path="/edit" element={<Edit />}></Route>
           </Routes>
         </div>
       </div>
